@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!--Top-->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/layout_top"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <!--content-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two Paired Sample T Test"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="25dp"
+                    android:background="@drawable/white_black_border">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:background="@drawable/white_black_border"
+                            android:textColor="#000"
+                            android:text=""/>
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="30dp"
+                            android:text="Mean"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:background="@drawable/white_black_border"
+                            android:layout_weight="0.5"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:background="@drawable/white_black_border">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:text="Pair 1"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.64">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade X Before Taking Courses"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade X Before Taking Courses"/>
+
+                            </TableRow>
+
+
+                        </TableLayout>
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.96"
+                            android:background="@drawable/white_black_border">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="73.33"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="82.00"/>
+
+                            </TableRow>
+
+
+                        </TableLayout>
+                        <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.96"-->
+                        <!--android:text="0.001"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:background="@drawable/white_black_border"-->
+                        <!--android:gravity="center"/>-->
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:background="@drawable/white_black_border">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:text="Pair 2"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.64">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XI Before Taking Courses"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XI Before Taking Courses"/>
+
+                            </TableRow>
+
+
+                        </TableLayout>
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.96"
+                            android:background="@drawable/white_black_border">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="74.73"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="78.67"/>
+
+                            </TableRow>
+
+
+                        </TableLayout>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:background="@drawable/white_black_border">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:text="Pair 3"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.64">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XII Before Taking Courses"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XII Before Taking Courses"/>
+
+                            </TableRow>
+
+
+                        </TableLayout>
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.96"
+                            android:background="@drawable/white_black_border">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="79.40"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="84.27"/>
+
+                            </TableRow>
+                        </TableLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#4db8ff"
+                    android:layout_marginBottom="6dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="25dp"
+                    android:background="@drawable/white_black_border">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:background="@drawable/white_black_border"
+                            android:textColor="#000"
+                            android:text="Paired Differences"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Sig. (2-tailed)"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:background="@drawable/white_black_border"
+                            android:layout_weight="0.59"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Correlation (r)"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:background="@drawable/white_black_border"
+                            android:layout_weight="0.4"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:text="Pair 1"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.981">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade X Before Taking Courses and"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade X After Taking Courses"/>
+
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8095"
+                            android:text="0.001"
+                            android:textColor="@android:color/black"
+                            android:background="@drawable/white_black_border"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8095"
+                            android:text="0.775"
+                            android:textColor="#000"
+                            android:background="@drawable/white_black_border"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:text="Pair 2"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.981">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XI Before Taking Courses and"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XI After Taking Courses"/>
+
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8095"
+                            android:text="0.001"
+                            android:textColor="@android:color/black"
+                            android:background="@drawable/white_black_border"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8095"
+                            android:text="0.780"
+                            android:textColor="#000"
+                            android:background="@drawable/white_black_border"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:text="Pair 3"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TableLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.981">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XII Before Taking Courses and"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/black"
+                                    android:text="Score of Grade XII After Taking Courses"/>
+
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8095"
+                            android:text="0.004"
+                            android:textColor="@android:color/black"
+                            android:background="@drawable/white_black_border"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8095"
+                            android:text="0.699"
+                            android:textColor="#000"
+                            android:background="@drawable/white_black_border"
+                            android:gravity="center"/>
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:text="From the analysis result we know that:"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="•"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/analisis3_1"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="•"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/analisis3_2"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="•"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/analisis3_3"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+
+                <!--Bottom-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/background_content"
+                    android:id="@+id/linearLayout">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/background_content_button"
+                            android:onClick="backHome"
+                            android:text="Back"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

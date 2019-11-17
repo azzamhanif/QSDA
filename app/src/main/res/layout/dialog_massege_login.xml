@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:padding="8dp"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Error!!"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tv_massageDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kombination username dan password salah"
+            android:textSize="17sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_okeDialogmsg"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:background="@android:drawable/screen_background_dark"/>
+</LinearLayout>

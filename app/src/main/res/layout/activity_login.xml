@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.azzam.qsda.LoginActivity"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/uwaw2"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <FrameLayout
+            android:id="@+id/LoginContent"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:padding="8dp"
+            android:layout_below="@id/logo"
+            android:background="@drawable/background_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/tv_usernameLogin"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:hint="Username"
+                        android:textSize="15sp"
+                        android:drawableEnd="@drawable/ic_username"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/tv_passwordLogin"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:hint="Password"
+                        android:drawableEnd="@drawable/ic_password"
+                        android:inputType="textPassword"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="LOGIN"
+                    android:onClick="masukLogin"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/background_content_button"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSignUpLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        android:text="Don't have an account? Sign up."
+        android:onClick="masukDaftar"
+        android:textAllCaps="false"/>
+</RelativeLayout>

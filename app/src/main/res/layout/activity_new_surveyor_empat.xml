@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!--Top-->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/layout_top"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+
+            <!--content-->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="@drawable/white_grey_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="List of Surveyor"
+                                android:textSize="20sp"
+                                android:textColor="@android:color/black"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="50dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp"
+                                android:text="Survey Area"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:background="#4db8ff"/>
+
+                    <!--List nama sama lokasi-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mufidah Hanif"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status : Done"
+                                android:textColor="@color/hijau"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Budi Chayani"
+                                android:textSize="15sp"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@android:color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status : On going"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tonno Sudianto"
+                                android:textSize="15sp"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@android:color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status : Done"
+                                android:textColor="@color/hijau"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Azzam Hanif"
+                                android:textSize="15sp"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@android:color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status : Rejected"
+                                android:textColor="@color/merah"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_width="155dp"
+                                android:layout_height="40dp"
+                                android:text="Grade X"
+                                android:textSize="15sp"/>
+
+                            <EditText
+                                android:layout_width="155dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Grade XI"
+                                android:layout_marginTop="15dp"
+                                />
+
+                            <EditText
+                                android:layout_width="155dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="15dp"
+                                android:textSize="15sp"
+                                android:text="Grace XII"
+                                />
+
+                            <TextView
+                                android:layout_width="155dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="15dp"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="4dp"
+                                android:text="Rejected"
+                                />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <!--Bottom-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/background_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="Add more"
+                            android:onClick="backPrevious"
+                            android:textColor="@android:color/white"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/background_content_button"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="Done"
+                            android:onClick="NextPage"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/background_content_button"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Surveyor Placement"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:background="@drawable/background_content_button"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

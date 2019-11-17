@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/uwaw"/>
+
+    <ImageView
+        android:id="@+id/splah_logo"
+        android:layout_below="@id/atas"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splah_logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bulet"/>
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bulet2"/>
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bulet3"/>
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bulet4"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

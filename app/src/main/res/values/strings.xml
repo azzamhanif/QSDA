@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Q-SDA</string>
+
+    <string-array name="status">
+        <item>Choices</item>
+        <item>Admin</item>
+        <item>Surveyor</item>
+    </string-array>
+
+    <string-array name="category_Survey">
+        <item>Choices</item>
+        <item>General (α = 0.05)</item>
+        <item>Medical (α = 0.01)</item>
+    </string-array>
+
+    <string-array name="size_of_sample">
+        <item>Choices</item>
+        <item>Auto</item>
+        <item>Manual</item>
+    </string-array>
+
+    <string-array name="rating">
+        <item>Choices</item>
+        <item>1-2</item>
+        <item>2-3</item>
+        <item>3-4</item>
+        <item>4-5</item>
+    </string-array>
+
+    <string-array name="area">
+        <item>Choices</item>
+        <item>Area 1</item>
+        <item>Area 2</item>
+        <item>Area 3</item>
+    </string-array>
+
+    <string-array name="Variable">
+        <item>Choices</item>
+        <item>string (any characters could be typed in)</item>
+        <item>numeric (only number could be typed in)</item>
+        <item>date (only form of date could be typed in. ex : dd/mm/yyyy)</item>
+    </string-array>
+
+    <string name="analisis1">
+        From the analysis result we know that the significance value (0.741) is more than α (0.05).
+        So the conclusion is there is no difference with the determined value and could be tolerated.
+    </string>
+
+    <string name="analisis2">
+        From the analysis result we know that the significance value (0.355) is more than α (0.05).
+        So the conclusion is there is no difference of the average number of patients of both hospitals.
+    </string>
+
+    <string name="analisis3_1">
+        The significance value of the score of grade X before and after taking courses (0.001) is less than α (0.05) and the correlation value is 0.775 which close to 1.
+        So the conclusion is there is a difference of the average exam score and have a strong correlation between the pairing.
+    </string>
+    <string name="analisis3_2">
+        The significance value of the score of grade XI before and after taking courses (0.001) is less than α (0.05) and the correlation value is 0.780 which close to 1.
+        So the conclusion is there is a difference of the average exam score and have a strong correlation between the pairing.
+    </string>
+    <string name="analisis3_3">
+        The significance value of the score of grade XII before and after taking courses (0.004) is less than α (0.05) and the correlation value is 0.699 which close to 1.
+        So the conclusion is there is a difference of the average exam score and have a strong correlation between the pairing.
+    </string>
+
+    <string name="des1">Need to know if the production machines are still functioning well by collecting data samples of polymorphs’ weight produced per day</string>
+    <string name="des2">Need to know if there is any difference of the average number of patients between Hospital A and Hospital B within 15 days as samples</string>
+    <string name="des3">Need to know if there is any difference of the students’ average exam score in every grades of before and after
+        taking extra courses by random sampling from each grades.</string>
+
+</resources>

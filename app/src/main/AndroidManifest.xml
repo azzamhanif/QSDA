@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.azzam.qsda">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplahScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".HomeAdminActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ActivityNewSurvey"/>
+        <activity android:name=".ActivityNewSurveyDua"/>
+        <activity android:name=".ActivityNewSurveyTiga"/>
+        <activity android:name=".ActivityNewSurveyEmpat"/>
+        <activity android:name=".ActivityRequestSurvey"/>
+        <activity android:name=".ActivityReceivePayment"/>
+        <activity android:name=".ActivityCheckSurvey"/>
+        <activity android:name=".ActivityResultAnalysis1"/>
+        <activity android:name=".ActivityResultAnalysis2"/>
+        <activity android:name=".ActivityResultAnalysis3"/>
+        <activity android:name=".ActivityDescriptionSurveyOngoning"/>
+
+        <activity android:name=".ActivityDescriptionHistorySurveyorHanif1"/>
+        <activity android:name=".ActivityDescriptionHistorySurveyorHanif2"/>
+        <activity android:name=".ActivityDescriptionHistorySurveyorHanif3"/>
+        <activity android:name=".ActivityDescriptionHistorySurveyorBudi2"/>
+        <activity android:name=".ActivityDescriptionHistorySurveyorBudi3"/>
+        <activity android:name=".ActivityDescriptionHistorySurveyorTono"/>
+
+
+
+        <activity android:name=".ActivityDetailHistory1"/>
+        <activity android:name=".ActivityDetailHistory2"/>
+        <activity android:name=".ActivityDetailHistory3"/>
+
+        <activity android:name=".ActivityDescriptionSurvey1"/>
+        <activity android:name=".ActivityDescriptionSurvey2"/>
+        <activity android:name=".ActivityDescriptionSurvey3"/>
+
+        <activity android:name=".ActivityDescriptionSurveySurveyor1Hanif"/>
+        <activity android:name=".ActivityDescriptionSurveySurveyor2Hanif"/>
+        <activity android:name=".ActivityDescriptionSurveySurveyor3Hanif"/>
+
+        <activity android:name=".ActivityMengisiSurvey1Hanif"/>
+        <activity android:name=".ActivityMengisiSurvey2Hanif"/>
+        <activity android:name=".ActivityMengisiSurvey3Hanif"/>
+
+
+        <activity android:name=".HomeSurveyorHanifActivity"/>
+        <activity android:name=".HomeSurveyorBudiActivity"/>
+        <activity android:name=".HomeSurveyorTonoActivity"/>
+
+        <activity android:name=".ActivityDescriptionSurveySurveyor1Budi"/>
+        <activity android:name=".ActivityDescriptionSurveySurveyor2Budi"/>
+        <activity android:name=".ActivityDescriptionSurveySurveyor3Budi"/>
+        <activity android:name=".ActivityDescriptionSurveySurveyor1Tono"/>
+        <activity android:name=".ActivityDescriptionSurveySurveyor2Tono"/>
+        <activity android:name=".ActivityDescriptionSurveySurveyor3Tono"/>
+
+        <activity android:name=".ActivityDataSurvey1"/>
+        <activity android:name=".ActivityDataSurvey2"/>
+        <activity android:name=".ActivityDataSurvey3"/>
+
+        <activity android:name=".ActivityMengisiSurvey2Budi"/>
+        <activity android:name=".ActivityMengisiSurvey3Budi"/>
+        <activity android:name=".ActivityMengisiSurvey3Tono"/>
+
+
+
+
+    </application>
+
+</manifest>
